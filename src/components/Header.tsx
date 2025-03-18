@@ -37,9 +37,9 @@ const Hero: React.FC = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <a className="nav-link" href="#home">
+                <Link className="nav-link" href="/">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item dropdown">
                 <a
@@ -61,31 +61,37 @@ const Hero: React.FC = () => {
                   }}
                 >
                   <li>
-                    <a className="dropdown-item" href="#design">
+                    <Link className="dropdown-item" href="/services/design">
                       Design
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#construction">
+                    <Link
+                      className="dropdown-item"
+                      href="/services/construction"
+                    >
                       Construction
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#maintenance">
+                    <Link
+                      className="dropdown-item"
+                      href="/services/maintenance"
+                    >
                       Maintenance
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#about">
+                <Link className="nav-link" href="/about">
                   About
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#contact">
+                <Link className="nav-link" href="/contact">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
