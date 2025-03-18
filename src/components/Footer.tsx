@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
         >
           Privacy Policy
         </a>
-        {" | "}
+        {' | '}
         <a
           href="https://www.youtube.com/watch?v=jxo_K7JLZxQ"
           target="_blank"
@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
         </a>
       </p>
       <p className="mb-1">
-        Site Designed by{" "}
+        Site Designed by{' '}
         <a
           href="https://bcn-nine-lovat.vercel.app/"
           target="_blank"
