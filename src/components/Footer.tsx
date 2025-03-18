@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
         </a>
       </p>
       <p className="mb-1">
-        Site Designed by{' '}
+        DEMO Site Designed by{' '}
         <a
           href="https://bcn-nine-lovat.vercel.app/"
           target="_blank"
