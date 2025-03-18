@@ -2,52 +2,73 @@ import Image from 'next/image';
 
 const Carousel: React.FC = () => {
   return (
-    <div className="d-flex justify-content-center mt-5">
+    <div>
       <div
         id="imageCarousel"
-        className="carousel slide w-75"
+        className="carousel slide carousel-fade w-100"
         data-bs-ride="carousel"
+        data-bs-pause="false"
+        style={{
+          height: '100vh',
+          position: 'relative',
+        }}
       >
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <Image
-              src="/Cara1.jpg"
-              alt="Feature 1"
-              width={1200}
-              height={400}
-              layout="intrinsic"
+            <div
               className="d-block w-100"
-            />
+              style={{ height: '100vh', position: 'relative' }}
+            >
+              <Image
+                src="/Cara1.jpg"
+                alt="Feature 1"
+                layout="fill"
+                objectFit="cover"
+                className="d-block w-100"
+              />
+            </div>
           </div>
           <div className="carousel-item">
-            <Image
-              src="/Cara2.jpg"
-              alt="Feature 2"
-              width={1200}
-              height={400}
-              layout="intrinsic"
+            <div
               className="d-block w-100"
-            />
+              style={{ height: '100vh', position: 'relative' }}
+            >
+              <Image
+                src="/Cara2.jpg"
+                alt="Feature 2"
+                layout="fill"
+                objectFit="cover"
+                className="d-block w-100"
+              />
+            </div>
           </div>
           <div className="carousel-item">
-            <Image
-              src="/Cara3.jpg"
-              alt="Feature 3"
-              width={1200}
-              height={400}
-              layout="intrinsic"
+            <div
               className="d-block w-100"
-            />
+              style={{ height: '100vh', position: 'relative' }}
+            >
+              <Image
+                src="/Cara3.jpg"
+                alt="Feature 3"
+                layout="fill"
+                objectFit="cover"
+                className="d-block w-100"
+              />
+            </div>
           </div>
           <div className="carousel-item">
-            <Image
-              src="/Cara4.jpg"
-              alt="Feature 4"
-              width={1200}
-              height={400}
-              layout="intrinsic"
+            <div
               className="d-block w-100"
-            />
+              style={{ height: '100vh', position: 'relative' }}
+            >
+              <Image
+                src="/Cara4.jpg"
+                alt="Feature 4"
+                layout="fill"
+                objectFit="cover"
+                className="d-block w-100"
+              />
+            </div>
           </div>
         </div>
         <button
@@ -74,6 +95,57 @@ const Carousel: React.FC = () => {
           ></span>
           <span className="visually-hidden">Next</span>
         </button>
+        <div
+          style={{
+            position: 'absolute',
+            top: '50%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)',
+            textAlign: 'center',
+            zIndex: 9,
+            color: '#fff',
+          }}
+        >
+          <h2
+            style={{
+              fontSize: '3rem',
+              textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)',
+            }}
+          >
+            Get Started Today
+          </h2>
+          <p
+            className="lead"
+            style={{
+              fontSize: '1.5rem',
+              textShadow: '2px 2px 4px rgba(0, 0, 0, 0.8)',
+            }}
+          >
+            Ready to start your landscaping journey? Let’s make it happen!
+          </p>
+          <div className="d-flex justify-content-center">
+            <a
+              href="mailto:westwavewebworks@gmail.com"
+              className="btn btn-primary mx-3"
+              role="button"
+              style={{
+                boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.3)',
+              }}
+            >
+              Contact Us
+            </a>
+            <a
+              href="tel:+1234567890"
+              className="btn btn-success mx-3"
+              role="button"
+              style={{
+                boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.3)',
+              }}
+            >
+              Call Now
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );
