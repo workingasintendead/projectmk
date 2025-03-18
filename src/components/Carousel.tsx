@@ -104,6 +104,9 @@ const Carousel: React.FC = () => {
             textAlign: 'center',
             zIndex: 9,
             color: '#fff',
+            background: 'rgba(0, 0, 0, 0.65)',
+            padding: '20px',
+            borderRadius: '10px',
           }}
         >
           <h2
@@ -130,6 +133,8 @@ const Carousel: React.FC = () => {
               role="button"
               style={{
                 boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.3)',
+                width: '150px',
+                textAlign: 'center',
               }}
             >
               Contact Us
@@ -140,6 +145,8 @@ const Carousel: React.FC = () => {
               role="button"
               style={{
                 boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.3)',
+                width: '150px',
+                textAlign: 'center',
               }}
             >
               Call Now
