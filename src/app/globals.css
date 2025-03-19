@@ -87,3 +87,12 @@ span.material-icons.me-2 {
 .bg-light {
   background-color: #ffffff !important;
 }
+
+#imageCarousel > div:nth-child(4) > div > a.btn.btn-success.mx-3 {
+  --bs-btn-bg: #c05c27;
+  --bs-btn-border-color: #c05c27;
+  --bs-btn-hover-bg: #af5524;
+  --bs-btn-hover-border-color: #af5524;
+  --bs-btn-active-bg: #c05c27;
+  --bs-btn-active-border-color: #c05c27;
+}

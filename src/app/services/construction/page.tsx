@@ -13,7 +13,7 @@ const Construction: React.FC = () => {
         <h1 className="text-center mb-5">Construction Services</h1>
 
         <div className="row align-items-center my-5">
-          <div className="col-md-6">
+          <div className="col-md-6 col-12 mb-4 mb-md-0 order-2 order-md-1">
             <h3>Dedicated Experts</h3>
             <p>
               Edgewater Landscaping offers unmatched expertise in landscape
@@ -27,7 +27,7 @@ const Construction: React.FC = () => {
               years.
             </p>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6 col-12 mb-4 mb-md-0 order-1 order-md-2">
             <Image
               src="/Construction1.jpg"
               alt="Construction Project"
@@ -41,7 +41,7 @@ const Construction: React.FC = () => {
         </div>
 
         <div className="row align-items-center my-5">
-          <div className="col-md-6">
+          <div className="col-md-6 col-12 mb-4 mb-md-0 order-1 order-md-1">
             <Image
               src="/Construction2.jpg"
               alt="Property Visit"
@@ -52,7 +52,7 @@ const Construction: React.FC = () => {
               className="rounded"
             />
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6 col-12 mb-4 mb-md-0 order-2 order-md-2">
             <h3>Communication is key</h3>
             <p>
               At the heart of our service is exceptional communication. We

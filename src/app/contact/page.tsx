@@ -96,30 +96,43 @@ const Contact: React.FC = () => {
     <div className="container-fluid p-0">
       <Header />
       <div className="container py-5" style={{ marginTop: '80px' }}>
-        <h1 className="text-center mb-5">Contact Us</h1>
+        <h1 className="text-center mb-3">Contact Us</h1>
         {statusMessage && (
           <div className="alert alert-info">{statusMessage}</div>
         )}
 
-        <div className="row">
-          <div className="col-md-6 mb-4">
-            <h2>Contact Information</h2>
-            <p>
-              <strong>Phone:</strong> +1234567890
-            </p>
-            <p>
-              <strong>Hours of Operation:</strong> Monday to Friday, 8am - 5pm
-            </p>
-            <p>
-              <strong>Address:</strong> 1234 Landscape Rd, San Diego, CA 92101
-            </p>
-          </div>
+        <div
+          className="text-center mb-4 p-4"
+          style={{
+            backgroundColor: '#bfbfbf',
+            borderRadius: '8px',
+            boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+          }}
+        >
+          <p>
+            <strong>Phone:</strong> +1234567890
+          </p>
+          <p>
+            <strong>Hours of Operation:</strong> Monday to Friday, 8am - 5pm
+          </p>
+          <p>
+            <strong>Address:</strong> 1234 Landscape Rd, San Diego, CA 92101
+          </p>
+        </div>
 
+        <div
+          className="row p-4"
+          style={{
+            backgroundColor: '#bfbfbf',
+            borderRadius: '8px',
+            boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+          }}
+        >
           <div className="col-md-6">
             <form onSubmit={handleSubmit}>
               <div className="mb-3">
                 <label htmlFor="name" className="form-label">
-                  Name
+                  <strong>Name</strong>
                 </label>
                 <input
                   type="text"
@@ -134,7 +147,7 @@ const Contact: React.FC = () => {
 
               <div className="mb-3">
                 <label htmlFor="email" className="form-label">
-                  Email
+                  <strong>Email</strong>
                 </label>
                 <input
                   type="email"
@@ -149,7 +162,7 @@ const Contact: React.FC = () => {
 
               <div className="mb-3">
                 <label htmlFor="phone" className="form-label">
-                  Phone
+                  <strong>Phone</strong>
                 </label>
                 <input
                   type="tel"
@@ -164,7 +177,7 @@ const Contact: React.FC = () => {
 
               <div className="mb-3">
                 <label htmlFor="address" className="form-label">
-                  Address
+                  <strong>Address</strong>
                 </label>
                 <input
                   type="text"
@@ -179,22 +192,26 @@ const Contact: React.FC = () => {
 
               <div className="mb-3">
                 <label htmlFor="message" className="form-label">
-                  Message
+                  <strong>Message</strong>
                 </label>
                 <textarea
                   className="form-control"
                   id="message"
                   name="message"
-                  rows={4}
+                  rows={10}
                   value={formData.message}
                   onChange={handleChange}
                   required
                 ></textarea>
               </div>
+            </form>
+          </div>
 
+          <div className="col-md-6">
+            <form onSubmit={handleSubmit}>
               <div className="mb-3">
                 <label className="form-label">
-                  What landscape needs do you have?
+                  <strong>What landscape needs do you have?</strong>
                 </label>
                 <div>
                   {[
@@ -228,7 +245,9 @@ const Contact: React.FC = () => {
 
               <div className="mb-3">
                 <label className="form-label">
-                  I have concerns about my property&apos;s landscape:
+                  <strong>
+                    I have concerns about my property&apos;s landscape:
+                  </strong>
                 </label>
                 <div>
                   {[
@@ -260,7 +279,7 @@ const Contact: React.FC = () => {
 
               <div className="mb-3">
                 <label htmlFor="propertySize" className="form-label">
-                  What is the size of your property? *
+                  <strong>What is the size of your property?</strong>
                 </label>
                 <select
                   className="form-select"
@@ -276,11 +295,15 @@ const Contact: React.FC = () => {
                   <option value="moreThan2Acre">More than 2 acres</option>
                 </select>
               </div>
+            </form>
+          </div>
 
+          <div className="row justify-content-center mt-3">
+            <div className="col-auto">
               <button type="submit" className="btn btn-primary">
                 Submit
               </button>
-            </form>
+            </div>
           </div>
         </div>
       </div>

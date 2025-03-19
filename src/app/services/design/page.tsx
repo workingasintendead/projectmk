@@ -13,7 +13,7 @@ const Design: React.FC = () => {
         <h1 className="text-center mb-5">Design Services</h1>
 
         <div className="row align-items-center my-5">
-          <div className="col-md-6">
+          <div className="col-md-6 col-12 mb-4 mb-md-0 order-1 order-md-1">
             <Image
               src="/Design1.jpg"
               alt="Landscape Design"
@@ -24,7 +24,7 @@ const Design: React.FC = () => {
               className="rounded"
             />
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6 col-12 order-2 order-md-2">
             <h3>Expert In-House Designers</h3>
             <p>
               At Edgewater Landscaping, our in-house designers bring a wealth of
@@ -38,7 +38,7 @@ const Design: React.FC = () => {
         </div>
 
         <div className="row align-items-center my-5">
-          <div className="col-md-6">
+          <div className="col-md-6 col-12 mb-4 mb-md-0 order-2 order-md-1">
             <h3>Sustainability Meets Beauty</h3>
             <p>
               We believe in creating designs that are as sustainable as they are
@@ -50,7 +50,7 @@ const Design: React.FC = () => {
               term.
             </p>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6 col-12 mb-4 mb-md-0 order-1 order-md-2">
             <Image
               src="/Design2.jpg"
               alt="Sustainable Landscape Design"
