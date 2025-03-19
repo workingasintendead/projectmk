@@ -13,7 +13,7 @@ const Maintenance: React.FC = () => {
         <h1 className="text-center mb-5">Maintenance Services</h1>
 
         <div className="row align-items-center my-5">
-          <div className="col-md-6">
+          <div className="col-md-6 col-12 mb-4 mb-md-0 order-1 order-md-1">
             <Image
               src="/Maint1.jpg"
               alt="Landscape Maintenance"
@@ -24,7 +24,7 @@ const Maintenance: React.FC = () => {
               className="rounded"
             />
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6 col-12 order-2 order-md-2">
             <h3>Comprehensive Care</h3>
             <p>
               Edgewater Landscaping offers complete maintenance solutions to
@@ -38,7 +38,7 @@ const Maintenance: React.FC = () => {
         </div>
 
         <div className="row align-items-center my-5">
-          <div className="col-md-6">
+          <div className="col-md-6 col-12 mb-4 mb-md-0 order-2 order-md-1">
             <h3>Ongoing Support</h3>
             <p>
               Maintaining your landscape is more than just regular upkeep;
@@ -50,7 +50,7 @@ const Maintenance: React.FC = () => {
               consistent care that fits your unique needs.
             </p>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6 col-12 mb-4 mb-md-0 order-1 order-md-2">
             <Image
               src="/Maint2.jpg"
               alt="Landscape Care"
