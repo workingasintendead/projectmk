@@ -93,6 +93,22 @@ const Hero: React.FC = () => {
                   Contact
                 </Link>
               </li>
+              <a
+                href="tel:+1234567890"
+                className="d-flex align-items-center"
+                style={{
+                  color: '#007bff',
+                  textDecoration: 'none',
+                }}
+              >
+                <span
+                  className="material-icons me-2"
+                  style={{ fontSize: '20px', marginRight: '0px' }}
+                >
+                  phone_iphone
+                </span>
+                +1234567890
+              </a>
             </ul>
           </div>
         </div>
