@@ -44,7 +44,8 @@ a {
 }
 
 .navbar {
-  padding: 1rem 2rem;
+  padding: 0rem 2rem;
+  --bs-navbar-brand-padding-y: 0;
 }
 
 .navbar-brand img {
@@ -53,11 +54,6 @@ a {
 
 .navbar-nav .nav-link {
   margin-right: 1rem;
-}
-
-.navbar {
-  padding: 0rem 2rem;
-  --bs-navbar-brand-padding-y: 0;
 }
 
 .navbar-brand {
@@ -95,4 +91,26 @@ span.material-icons.me-2 {
   --bs-btn-hover-border-color: #af5524;
   --bs-btn-active-bg: #c05c27;
   --bs-btn-active-border-color: #c05c27;
+}
+
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-overlay {
+  background-color: rgba(0, 0, 0, 0.75);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+  opacity: 1;
+}
+
+.portfolio-overlay p {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }

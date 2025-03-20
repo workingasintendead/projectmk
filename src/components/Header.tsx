@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const Hero: React.FC = () => {
+const Header: React.FC = () => {
   return (
     <div>
       <nav
@@ -39,6 +39,11 @@ const Hero: React.FC = () => {
               <li className="nav-item">
                 <Link className="nav-link" href="/">
                   Home
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" href="/portfolio">
+                  Portfolio
                 </Link>
               </li>
               <li className="nav-item dropdown">
@@ -117,4 +122,4 @@ const Hero: React.FC = () => {
   );
 };
 
-export default Hero;
+export default Header;
