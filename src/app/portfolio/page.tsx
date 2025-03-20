@@ -49,12 +49,12 @@ const Portfolio: React.FC = () => {
               >
                 <Image
                   src="/Delmar1.jpg"
-                  alt="Delmar"
+                  alt="Del Mar"
                   layout="fill"
                   objectFit="cover"
                 />
                 <div className="portfolio-overlay position-absolute w-100 h-100 d-flex align-items-center justify-content-center text-center">
-                  <p className="text-white fs-4 fw-bold">Delmar</p>
+                  <p className="text-white fs-4 fw-bold">Del Mar</p>
                 </div>
               </div>
             </Link>
